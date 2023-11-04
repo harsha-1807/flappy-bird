@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&family=Noto+Sans+JP:wght@300&family=Oswald:wght@600&family=Press+Start+2P&family=Roboto:wght@300&display=swap');
+
+body{
+    background-image: url(/assets/bg\ flappy\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+#container{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box{
+    width: 600px;
+    height: 300px;
+    border-radius: 46px;
+    background: rgba(217, 217, 217, 0.80);
+    backdrop-filter: blur(7px);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    /* justify-content: center; */
+    
+}
+h2{
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Press Start 2P';
+    color: #2C4F7D;
+    -webkit-text-stroke:0.5px;
+    -webkit-text-stroke-color: #B23B3B;
+    padding: 25px;
+}
+
+h2:hover{
+    cursor: pointer;
+}
+
+#box2{
+    height: 60px;
+    width: 450px;
+    border-radius: 15px;
+    background: #FFF;
+}
+
+
+#submitButton{
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    background: #FFF;
+    
+}
