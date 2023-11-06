@@ -45,7 +45,7 @@ h2{
     border-radius: 15px;
     background: #FFF;
 }
-.inputbox{
+#inputbox1,#inputbox2{
     margin: 13px;
     width: 430px;
     height: 30px;
@@ -55,6 +55,7 @@ h2{
     font-family: 'Press Start 2P';
     color: #2C4F7D;
     -webkit-text-stroke:0.5px;
+    text-align: center;
     /* -webkit-text-stroke-color: #B23B3B; */
 }
 

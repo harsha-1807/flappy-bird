@@ -56,15 +56,17 @@ h2{
     color: #2C4F7D;
     -webkit-text-stroke:0.5px;
     /* -webkit-text-stroke-color: #B23B3B; */
+    text-align: center;
+    text-transform: uppercase;
 }
 
 #submitButton{
     width: 150px;
     height: 50px;
     border-radius: 15px;
-    background: #FFF;
+    /* background: #FFF; */
     margin: 30px;
-    /* transition: all .3s ease-in-out; */
+    
 
 
 }

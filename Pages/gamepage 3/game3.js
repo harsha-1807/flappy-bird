@@ -19,7 +19,7 @@ let background =
 
 //name element
 let Name = 	document.querySelector('.name');
-let input = localStorage.getItem("Name")
+let input = localStorage.getItem("Name2")
 // console.log(input)
 	
 // creating score element 
@@ -84,7 +84,7 @@ function move() {
 			
 		// Changing game state and end the game after collision
 		game_state = 'End';
-        window.open("/Pages/score page 1p/score1.html","_self")
+        window.open("/Pages/score page 2p/score2.html","_self")
 		// message.innerHTML = 'Press Enter To Restart'; 
 		// message.style.left = '28vw'; 
 		return; 
@@ -102,7 +102,7 @@ function move() {
 			score++;
 			
 	
-			localStorage.setItem("score:",score)
+			localStorage.setItem("score p2",score)
 
 			
 		}
@@ -135,7 +135,7 @@ function apply_gravity() {
 	game_state = 'End'; 
 	// message.innerHTML = 'Press Enter To Restart'; 
 	// message.style.left = '28vw'; 
-    window.open("/Pages/score page 1p/score1.html","_self")
+    window.open("/Pages/score page 2p/score2.html","_self")
 
 	return; 
 	} 
@@ -183,4 +183,4 @@ requestAnimationFrame(create_pipe);
 } 
 
 
-localStorage.setItem("score:", "0")
+localStorage.setItem("score p2", "0")

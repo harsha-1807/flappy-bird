@@ -1,32 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Score | Flappy Bird</title>
-    <link rel="stylesheet" href="score1.css">
+    <title>Flappy Bird | Single player</title>
+    <link rel="stylesheet" href="game2.css">
     <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAA9/8AAAAAAADQ/wAAFf8A////AHX7/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERERERERERERERERERERERERERERERERERERERERERERERIiIhERERESIiIhMzMREREQABMRERERAAEAATMzMRVVUQABERERFVUQABREEREREQABRBQREREQAAFEFBEREREQABRBERERERERERERERERERERERERERERERERERH//wAA//8AAP//AAD4PwAA4AMAAMABAADAAQAAgAAAAAABAAAABwAAAAcAAMAHAADgDwAA+B8AAP//AAD//wAA" rel="icon" type="image/x-icon">
 
 </head>
-<body>
-    <div id="container">
-        <div id="box">
-            <h2 >Oops!</h2>  
-            <div id="Buttons">
-                <h1 id="playername"></h1>
-                <br>
-                <div id="scorecarddiv"><h1>score:</h1><h1 id="score"></h1></div>
-                <div id="scorecarddiv"><h1>highscore:</h1><h1 id="highscore"></h1></div>
-                <br>
-                <br>
-                <h1 id="Button1">Play again</h1>
-                <h1 id="Button2">Home Page</h1>
-            </div>
-        </div>
-      
-
-    </div>
-    <script src="score1.js"></script>
+<body> 
+    <div class="background"></div> 
+	<img class="bird" src="/assets/bird3.png" alt="bird-img">
+	<div class="message"> 
+		Press Space To Start Game
+		<br>
+		<br>
+		press space OR uparrow to jump
+	</div> 
+	<div class="score"> 
+		<span class="name"></span><p></p>
+		<br>
+		<span class="score_title"></span> 
+		<span class="score_val"></span>
+	</div>
+	<script src="game2.js"></script>
     
 </body>
 </html>

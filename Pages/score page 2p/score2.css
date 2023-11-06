@@ -16,15 +16,25 @@ body{
 }
 #box{
     width: 600px;
-    height: 400px;
+    height: 500px;
     border-radius: 46px;
-    background: rgba(217, 217, 217, 0.80);
+    background: rgba(217, 217, 217, 0.51);
     backdrop-filter: blur(7px);
     display: flex;
     flex-direction: column;
     align-items:center;
     
+}
+
+#Buttons{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center; 
+
     
+
     
 }
 h2{
@@ -38,36 +48,6 @@ h2{
 }
 
 
-
-.box2{
-    height: 60px;
-    width: 450px;
-    border-radius: 15px;
-    background: #FFF;
-}
-.inputbox{
-    margin: 13px;
-    width: 430px;
-    height: 30px;
-    border: 0;
-    outline: none;
-    font-size: 20px;
-    font-family: 'Press Start 2P';
-    color: #2C4F7D;
-    -webkit-text-stroke:0.5px;
-    /* -webkit-text-stroke-color: #B23B3B; */
-}
-
-#submitButton{
-    width: 150px;
-    height: 50px;
-    border-radius: 15px;
-    background: #FFF;
-    margin: 30px;
-    /* transition: all .3s ease-in-out; */
-
-
-}
 h1{
     font-weight: 900;
     font-size: 25px;
@@ -77,9 +57,19 @@ h1{
     -webkit-text-stroke-color: #B23B3B;
     /* padding: 25px; */
     padding-left: 12px;
+    text-transform: uppercase;
 
 }
 
 h1:hover{
     cursor: pointer;
+}
+
+#scorecarddiv{
+    display: flex;
+}
+#winner{
+    text-align: center;
+    position: relative;
+    top: 30px;
 }
