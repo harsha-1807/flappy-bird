@@ -193,3 +193,9 @@ requestAnimationFrame(create_pipe);
 
 
 localStorage.setItem("score p1", "0")
+
+
+
+
+
+

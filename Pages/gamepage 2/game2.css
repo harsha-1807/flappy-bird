@@ -98,3 +98,16 @@ h1{
 .name,.score_title{
 	text-transform: uppercase
 }
+
+@media only screen and (max-width:600px){
+	.message{
+		font-size: 10px;
+		position: fixed;
+		/* top: 0; */
+		left: 80px;
+		width: 280px;
+	}
+	#pname{
+		font-size: small;
+	}
+}
