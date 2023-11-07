@@ -14,7 +14,7 @@ body {
 .background{ 
 	height: 100%; 
 	width: 100%; 
-	background-image: url(/assets/bg.png);
+	background-image: url(../assets/bg.png);
     /* background-color: aquamarine; */
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -38,7 +38,7 @@ body {
 	height: 70vh; 
 	width: 6vw;
 	
-	background-image: url(/assets/STICK2.png);
+	background-image: url(../assets/STICK2.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	
