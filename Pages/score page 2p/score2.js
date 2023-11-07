@@ -59,10 +59,10 @@ let button1 = document.getElementById("Button1")
 let button2 = document.getElementById("Button2")
 
 button1.onclick = () => {
-  window.open("/Pages/gamepage 2/game2.html","_self")
+  window.open("../gamepage 2/game2.html","_self")
 };
 
 button2.onclick = () => {
-  window.open("/index.html","_self")
+  window.open("../../index.html","_self")
 };
 

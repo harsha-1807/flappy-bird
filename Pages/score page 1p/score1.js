@@ -38,6 +38,6 @@ button1.onclick = () => {
 };
 
 button2.onclick = () => {
-  window.open("/index.html","_self")
+  window.open("../../index.html","_self")
 };
 
