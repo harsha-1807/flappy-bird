@@ -63,6 +63,6 @@ button1.onclick = () => {
 };
 
 button2.onclick = () => {
-  window.open("/Pages/start page/index.html","_self")
+  window.open("/index.html","_self")
 };
 
