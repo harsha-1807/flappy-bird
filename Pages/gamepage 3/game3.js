@@ -9,10 +9,10 @@ let score = 0;
 
 
 // sounds 
-let wing = new Audio("/assets/wing.mp3");
-let hit = new Audio("/assets/hit.mp3");
-let point = new Audio("/assets/point.mp3");
-let die = new Audio("/assets/die.mp3");
+let wing = new Audio("../assets/wing.mp3");
+let hit = new Audio("../assets/hit.mp3");
+let point = new Audio("../assets/point.mp3");
+let die = new Audio("../assets/die.mp3");
 
 // creating bird element
 let bird = document.querySelector('.bird'); 
@@ -92,7 +92,7 @@ function move() {
 			
 		// Changing game state and end the game after collision
 		game_state = 'End';
-        window.open("/Pages/score page 2p/score2.html","_self")
+        window.open("../score page 2p/score2.html","_self")
 		// message.innerHTML = 'Press Enter To Restart'; 
 		// message.style.left = '28vw'; 
 		return; 
@@ -145,7 +145,7 @@ function apply_gravity() {
 			game_state = 'End'; 
 	// message.innerHTML = 'Press Enter To Restart'; 
 	// message.style.left = '28vw'; 
-    window.open("/Pages/score page 2p/score2.html","_self")
+    window.open("../score page 2p/score2.html","_self")
 
 	return; 
 	} 
