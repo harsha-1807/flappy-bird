@@ -73,3 +73,21 @@ h1:hover{
     position: relative;
     top: 30px;
 }
+
+#footer{
+    width: 500px;
+    position: fixed;
+    left: 46vw;
+}
+a{
+    font-size: large;
+    text-decoration: none;
+    color: white;
+
+    color: white;
+
+}
+a:hover{
+    font-size: larger;
+    color:black;
+}

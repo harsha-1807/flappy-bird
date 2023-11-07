@@ -7,6 +7,11 @@ let gravity = 0.5;
 // score
 let score = 0;
 
+// sounds 
+let wing = new Audio("/assets/wing.mp3");
+let hit = new Audio("/assets/hit.mp3");
+let point = new Audio("/assets/point.mp3");
+let die = new Audio("/assets/die.mp3");
 
 // creating bird element
 let bird = document.querySelector('.bird'); 
@@ -36,7 +41,7 @@ let game_state = 'Start';
 // key press
 document.addEventListener('keydown', (e) => { 
 	
-// Starting the game if enter key is pressed 
+// Starting the game if space key is pressed 
 if (e.key == ' ' && 
 	game_state != 'Play') { 
 	document.querySelectorAll('.pipe_sprite') 
@@ -51,12 +56,13 @@ if (e.key == ' ' &&
 	score_title.innerHTML = 'Score : '; 
 	score_val.innerHTML = '0';
 	play(); 
+	
 } 
 }); 
 function play() { 
 function move() { 
 	
-	// Detect game has ended or not
+	// Detecting game has ended or not
 	if (game_state != 'Play') return; 
 	
 	// creating pipe element
@@ -81,9 +87,14 @@ function move() {
 		bird_props.top + 
 		bird_props.height > pipe_sprite_props.top 
 		) { 
-			
+        hit.play()
+		
 		// Changing game state and end the game after collision
 		game_state = 'End';
+		
+		
+		
+		
         window.open("/Pages/score page 1p/score1.html","_self")
 		// message.innerHTML = 'Press Enter To Restart'; 
 		// message.style.left = '28vw'; 
@@ -100,6 +111,7 @@ function move() {
 			score_val.innerHTML = +score_val.innerHTML + 1;
 			// console.log(score_val)
 			score++;
+			point.play()
 			
 	
 			localStorage.setItem("score:",score)
@@ -124,6 +136,8 @@ function apply_gravity() {
 	document.addEventListener('keydown', (e) => { 
 	if (e.key == 'ArrowUp' || e.key == ' ') { 
 		bird_dy = -7.6; 
+		wing.play();
+		// die.play()
 	} 
 	}); 
 
@@ -132,9 +146,11 @@ function apply_gravity() {
 
 	if (bird_props.top <= 0 || 
 		bird_props.bottom >= background.bottom) { 
+	die.play()
 	game_state = 'End'; 
 	// message.innerHTML = 'Press Enter To Restart'; 
 	// message.style.left = '28vw'; 
+	die.play();
     window.open("/Pages/score page 1p/score1.html","_self")
 
 	return; 
@@ -184,3 +200,8 @@ requestAnimationFrame(create_pipe);
 
 
 localStorage.setItem("score:", "0")
+
+// if (e.key == ' ') { 
+// 	let wing = new Audio("/assets/wing.mp3")
+// 	wing.play();	
+// } 

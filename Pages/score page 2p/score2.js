@@ -18,14 +18,26 @@ let player2 = localStorage.getItem("Name2")
 
 
 
-
+let won = document.getElementById("won")
 let winner = document.getElementById("winner")
 
 if(scorep1<scorep2){
   winner.textContent = player2
-}else{
+}else if(scorep2<scorep1){
   winner.textContent = player1
 }
+else if(scorep1==scorep2){
+  winner.textContent = "Tie"
+  won.textContent = " "
+}
+
+let p1name = document.getElementById("player1")
+
+let p2name = document.getElementById("player2")
+p1name.textContent = player1
+p2name.textContent = player2
+
+
 
 //high score
 
@@ -51,6 +63,6 @@ button1.onclick = () => {
 };
 
 button2.onclick = () => {
-  window.open("/Pages/start page/start.html","_self")
+  window.open("/Pages/start page/index.html","_self")
 };
 

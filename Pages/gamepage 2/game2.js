@@ -7,6 +7,11 @@ let gravity = 0.5;
 // score
 let score = 0;
 
+// sounds 
+let wing = new Audio("/assets/wing.mp3");
+let hit = new Audio("/assets/hit.mp3");
+let point = new Audio("/assets/point.mp3");
+let die = new Audio("/assets/die.mp3");
 
 // creating bird element
 let bird = document.querySelector('.bird'); 
@@ -21,7 +26,8 @@ let background =
 let Name = 	document.querySelector('.name');
 let input = localStorage.getItem("Name1")
 // console.log(input)
-	
+let pname = document.getElementById("pname")
+pname.textContent = input + "'s  "+"  turn"
 // creating score element 
 let score_val = 
 	document.querySelector('.score_val'); 
@@ -46,7 +52,7 @@ if (e.key == ' ' &&
 	bird.style.top = '40vh';
 	game_state = 'Play'; 
 	message.innerHTML = '';
-	
+	pname.textContent = " ";
 	Name.innerHTML = input;
 	score_title.innerHTML = 'Score : '; 
 	score_val.innerHTML = '0';
@@ -81,7 +87,7 @@ function move() {
 		bird_props.top + 
 		bird_props.height > pipe_sprite_props.top 
 		) { 
-			
+			hit.play()
 		// Changing game state and end the game after collision
 		game_state = 'End';
         window.open("/Pages/gamepage 3/game3.html","_self")
@@ -101,7 +107,7 @@ function move() {
 			score_val.innerHTML = +score_val.innerHTML + 1;
 			// console.log(score_val)
 			score++;
-			
+			point.play()
 	
 			localStorage.setItem("score p1",score)
 
@@ -125,6 +131,7 @@ function apply_gravity() {
 	document.addEventListener('keydown', (e) => { 
 	if (e.key == 'ArrowUp' || e.key == ' ') { 
 		bird_dy = -7.6; 
+		wing.play();
 	} 
 	}); 
 
@@ -133,10 +140,11 @@ function apply_gravity() {
 
 	if (bird_props.top <= 0 || 
 		bird_props.bottom >= background.bottom) { 
-	game_state = 'End'; 
+			die.play();
+			game_state = 'End'; 
 	// message.innerHTML = 'Press Enter To Restart'; 
 	// message.style.left = '28vw'; 
-    window.open("/Pages/gamepage 3/game3.html","_self")
+    		window.open("/Pages/gamepage 3/game3.html","_self")
 
 	return; 
 	} 

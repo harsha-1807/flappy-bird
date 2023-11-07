@@ -30,6 +30,20 @@ body {
 	left: 30vw; 
 	z-index: 100; 
 } 
+h1{
+	position: fixed; 
+	z-index: 10; 
+	height: 10vh;
+	width: 600px; 
+	font-size: 25px; 
+	font-weight: 100;  
+	top: 42vh; 
+	left: 1px; 
+	text-align: center; 
+	font-family: 'Press Start 2P';
+	color: white; 
+	text-transform: uppercase
+}
 
 .pipe_sprite { 
 	position: fixed; 

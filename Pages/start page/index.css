@@ -50,3 +50,31 @@ h2{
 h2:hover{
     cursor: pointer;
 }
+
+
+@media only screen and (max-width:600px){
+    body{
+        background-size: cover;
+        /* background-repeat: repeat; */
+        height: 100vh; 
+        width: 100vw; 
+    }
+    h2{
+        font-size: 30px;
+   
+    font-family: 'Press Start 2P';
+    color: white;
+    
+    -webkit-text-stroke-color:none;
+    }
+
+   .bird{
+    width: 80%;
+    position: fixed;
+    left: 40px;
+   }
+   #bird{
+    left: 37vw;
+    top: 37vh;
+   }
+}
