@@ -34,7 +34,7 @@ let button2 = document.getElementById("Button2")
 
 
 button1.onclick = () => {
-  window.open("/Pages/gamepage 1/game1.html","_self")
+  window.open("../gamepage 1/game1.html","_self")
 };
 
 button2.onclick = () => {

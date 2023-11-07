@@ -95,7 +95,7 @@ function move() {
 		
 		
 		
-        window.open("/Pages/score page 1p/score1.html","_self")
+        window.open("../score page 1p/score1.html","_self")
 		// message.innerHTML = 'Press Enter To Restart'; 
 		// message.style.left = '28vw'; 
 		return; 
@@ -151,7 +151,7 @@ function apply_gravity() {
 	// message.innerHTML = 'Press Enter To Restart'; 
 	// message.style.left = '28vw'; 
 	die.play();
-    window.open("/Pages/score page 1p/score1.html","_self")
+    window.open("../score page 1p/score1.html","_self")
 
 	return; 
 	} 
