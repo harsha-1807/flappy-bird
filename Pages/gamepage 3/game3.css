@@ -14,7 +14,7 @@ body {
 .background{ 
 	height: 100%; 
 	width: 100%; 
-	background-image: url(/assets/bg\ flappy\ 1.png);
+	background-image: url(/assets/bg.png);
     /* background-color: aquamarine; */
 	background-repeat: no-repeat;
 	background-size: cover;
