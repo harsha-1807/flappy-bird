@@ -297,8 +297,8 @@ if(x.matches){
 					score++;
 					point.play()
 					
-			
-					localStorage.setItem("score:",score)
+					localStorage.setItem("score p2",score)
+					
 		
 					
 				}
