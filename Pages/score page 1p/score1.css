@@ -58,6 +58,7 @@ h1{
     /* padding: 25px; */
     padding-left: 12px;
     text-transform: uppercase;
+    user-select: none;
 
 }
 

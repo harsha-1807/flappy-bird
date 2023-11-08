@@ -79,6 +79,7 @@ h1{
     -webkit-text-stroke-color: #B23B3B;
     /* padding: 25px; */
     padding-left: 12px;
+    user-select: none;
 
 }
 
