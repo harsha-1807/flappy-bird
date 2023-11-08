@@ -36,7 +36,8 @@ body {
 	top: 40vh; 
 	left: 100vw;
 	height: 70vh; 
-	width: 6vw;
+	width: 5vw;
+	border-radius: 15px;
 	
 	background-image: url(../assets/STICK2.png);
 	background-repeat: no-repeat;
@@ -101,13 +102,44 @@ h1{
 
 @media only screen and (max-width:600px){
 	.message{
-		font-size: 10px;
+		font-size: 13px;
 		position: fixed;
-		/* top: 0; */
-		left: 80px;
+		top: 15vh;
+		left: 60px;
 		width: 280px;
 	}
 	#pname{
 		font-size: small;
 	}
+	#touchbutton{
+		text-align: center; 
+		font-family: 'Press Start 2P';
+		font-size: 30px; 
+		font-weight: 100; 
+		position: fixed; 
+		top: 90vh; 
+		left: 30vw; 
+		color: black;
+		background-color: white;
+		z-index: 100;
+		height: 30px;
+		width: 200px;
+		
+
+	}
+	.pipe_sprite { 
+		position: fixed; 
+		top: 40vh; 
+		left: 100vw;
+		height: 70vh; 
+		width: 13vw;
+		
+		background-image: url(../assets/STICK2.png);
+		/* background-color: brown; */
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+	} 
+	
+	
 }
